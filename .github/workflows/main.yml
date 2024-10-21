@@ -93,7 +93,7 @@ jobs:
       with:
         push: true
         context: ./src
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.DockerImageName }}:${{ github.sha }}
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/todoapp:${{ github.sha }}
 
   helm-ci:
     runs-on: ubuntu-latest
