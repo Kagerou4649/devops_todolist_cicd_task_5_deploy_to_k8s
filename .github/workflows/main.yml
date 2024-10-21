@@ -94,6 +94,7 @@ jobs:
         push: true
         context: ./src
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/todoapp:${{ github.sha }}
+        # Updated token and DOCKERHUB_USERNAME 18:14
 
   helm-ci:
     runs-on: ubuntu-latest
