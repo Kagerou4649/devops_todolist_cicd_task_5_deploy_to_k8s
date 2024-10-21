@@ -59,14 +59,6 @@ jobs:
       uses: azure/setup-kubectl@v4
       id: install
 
-    - uses: azure/login@v2
-      with:
-       creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-    - uses: azure/aks-set-context@v3
-      with:
-         cluster-name: ${{ vars.AZURE_CLUSTER_NAME }}
-         resource-group: ${{ vars.AZURE_RESOURCE_GROUP }}
    #Setting up Helm Upgrade
     - name: Dry-run
       run: |
