@@ -16,7 +16,7 @@ on:
      helm-values-path:
        description: 'Path to the helm values file'
        type: string
-       default: './todoapp/values.yml'
+       default: './todoapp/values.yaml'
      helm-release-name:
         description: 'helm upgrade name'
         type: string
